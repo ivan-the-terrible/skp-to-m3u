@@ -20,8 +20,8 @@ The files in this repository achieve the same thing, but are available for diffe
 
 Running the script requires parameters:
 
-- Absolute path of source video file
-- Absolute path of Skip file to convert
+- Path of source video file
+- Path of Skip file to convert
 
 If you do not include these when running the script, you will be prompted for them.
 
@@ -29,6 +29,16 @@ Once the script is done, it will output a M3U file to the location of your video
 The M3U file must be in the same directory of your video file.
 
 Opening the M3U with VLC Media Player will produce the desired effect.
+
+It can look like:
+
+```bash
+./skp-to-m3u.ps1 -VideoFile "movie.mkv" -SKPFile "C:\Users\Test\Downloads\movie.skp"
+
+python skp-to-m3u.py "~/movie.mkv" "~/movie.skp"
+
+./skp-to-m3u.sh "~/movie.mkv" "~/movie.skp"
+```
 
 ## Technical Details
 
